@@ -9,7 +9,8 @@ SpringCloud Integration是SpringCloud整合的示例,可直接用于生产环境
 |技术|版本|
 |:---:|---|
 |Java|1.8+|
-|SpringCloud|Greenwich.RELEASE(目前最新版)|
+|SpringCloud|Finchley.RELEASE|
+|SpringBoot|2.0.3.RELEASE|
 
 ### 贡献人员(排名部分先后)
 

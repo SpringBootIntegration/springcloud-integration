@@ -1,12 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.3.RELEASE</version>
+        <relativePath/>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.edurt.si</groupId>
     <artifactId>springcloud-integration</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
 
     <name>springcloud-integration</name>
+
+    <properties>
+        <!-- 依赖版本信息 -->
+        <dependency.spring.cloud.common.version>Finchley.RELEASE</dependency.spring.cloud.common.version>
+    </properties>
+
+    <modules>
+        <module>springcloud-integration-eureka</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- spring cloud -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${dependency.spring.cloud.common.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
