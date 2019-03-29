@@ -23,6 +23,7 @@
 
     <modules>
         <module>springcloud-integration-eureka</module>
+        <module>springcloud-integration-eureka-code</module>
     </modules>
 
     <dependencyManagement>
